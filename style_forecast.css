@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.name_app {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.today,
+.week {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header a:hover {
+    background-color: #0056b3;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.weather-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    width: 400px;
+    overflow: auto;
+    max-height: 550px;
+}
+
+.location-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #007BFF;
+    border-radius: 0;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#weather-forecast {
+    background-color: #fff;
+}
+
+.forecast-item {
+    flex: 0 0 calc(50% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid #0056b3;
+    text-align: center;
+    margin-right: 0;
+}
+
+.forecast-item h5 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.forecast-item .weather-icon img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.forecast-item .temperature {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.location {
+    margin-top: 10px;
+}
+
+#location-button {
+    background: none;
+    border: none;
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+#location-button:hover {
+    color: #0056b3;
+}

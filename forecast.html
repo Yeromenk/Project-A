@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_forecast.css">
+    <script src="forecast.js"></script>
+    <title>5-Day Weather Forecast</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="name_app">Weather</div>
+            <div class="today"><a href="main.html">Today</a></div>
+            <div class="week"><a href="forecast.html">Forecast</a></div>
+        </div>
+    </header>
+    <div class="center-container">
+        <div class="weather-container">
+            <h2>5-Day Weather Forecast</h2>
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Enter city">
+                <button id="search-button">Search</button>
+            </div>
+            <div class="location">
+                <button id="location-button">Find my location</button>
+            </div>
+            <div id="weather-forecast" class="forecast">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

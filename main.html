@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Weather forecast today</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="name_app">Weather</div>
+            <div class="today"><a href="main.html">Today</a></div>
+            <div class="week"><a href="forecast.html">Forecast</a></div>
+        </div>
+    </header>
+    <div class="center-container">
+        <div class="weather-container">
+            <h2>Current Weather</h2>
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Enter city">
+                <button id="search-button">Search</button>
+            </div>
+            <div class="location">
+                <button id="location-button">Find my location</button>
+            </div>
+            <div class="weather-data" id="current-weather">
+                <h2 id="date" class="date"></h2>
+                <div class="weather-info">
+                    <div class="current-weather">
+                        <div class="weather-icon" id="current-weather-icon"></div>
+                        <div class="current-temp" id="current_temp"></div>
+                        <div class="location" id="location"></div>
+                        <div class="weather-description" id="weather"></div>
+                    </div>
+                    <canvas id="tempChart" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
